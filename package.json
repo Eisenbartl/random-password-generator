@@ -1,0 +1,14 @@
+{
+  "name": "password-generator",
+  "version": "1.0.0",
+  "description": "Random password generator desktop app",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Laine Eisenbart",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^4.1.3"
+  }
+}

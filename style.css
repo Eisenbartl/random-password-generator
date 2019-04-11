@@ -1,0 +1,194 @@
+:root {
+  --main-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  height: 60px;
+  width: 100vw;
+  font-family: var(--main-font);
+}
+
+/* Main Div */
+#main {
+  width: 290px;
+}
+
+/* Password Area */
+.password-form {
+  display: grid;
+  place-items: center;
+  padding: 1rem 0;
+}
+
+/* Labels */
+label {
+  display: block;
+  text-align: left;
+  font-family: var(--main-font);
+}
+
+#add-site, #add-username {
+  display: block;
+  height: 30px;
+  width: 240px;
+  font-family: var(--main-font);
+  font-size: 1.2rem;
+  border: 1px solid #333;
+}
+
+.xyz {
+  display: flex;
+  font-size: 0;
+}
+
+.copy {
+  display: grid;
+  place-items: center;
+  height: 40px;
+  width: 40px;
+  background: #f4f4f4;
+  border: 1px solid #333;
+  font-size: 1.7rem;
+}
+
+.copy:hover {
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+textarea {
+  height: 40px;
+  width: 200px;
+  border: 1px solid #333;
+  border-left: none;
+  font-size: 1.2rem;
+  padding: 2.5% 0;
+  padding-left: .5rem;
+  font-family: var(--main-font);
+}
+
+/* Buttons */
+#buttons {
+  display: flex;
+}
+
+#output:focus, .btn:focus {
+  outline: 0;
+}
+
+.btn {
+  text-align: center;
+  margin: .5rem .5rem;
+  margin-left: 0;
+  width: 80px;
+  height: 30px;
+  border: none;
+  font-family: var(--main-font);
+  font-size: 1.1rem;
+  background: #b8b8b8;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background: #333;
+  color: #fff;
+}
+
+.create {
+  /* Color and text-shadow removes the blinking cursor */
+  color: transparent;
+  text-shadow: 0 0 0 black;
+}
+
+.create:hover {
+  background: #333;
+  color: transparent;
+  text-shadow: 0 0 0 #fff;
+}
+
+/* Dropdown */
+#chevron {
+  margin-left: 30px;
+  font-size: 1.2rem;
+}
+
+#chevron:hover {
+  cursor: pointer;
+}
+
+/* Password List */
+.list-frame {
+  padding: 1rem 0 2rem 0;
+  width: 600px;
+  font-family: var(--main-font);
+  /* border: 1px dotted #333; */
+  visibility: hidden;
+}
+
+.password-headers {
+  width: 100%;
+}
+
+.empty {
+  padding: 10px;
+}
+
+.web, .user, .pass {
+  width: 200px;
+  text-align: left;
+}
+
+td {
+  border-bottom: 1px solid #333;
+}
+
+/* List columns */
+.list-items {
+}
+
+/* Info Form */
+.add-item {
+  height: 300px;
+  width: 250px;
+  border: 1px solid red;
+  background: #f4f4f4;
+  position: absolute;
+  /* top: 50%;
+  margin-top: -50px; */
+  top: 0;
+  left: 0;
+  z-index: 1;
+  /* visibility: hidden; */
+}
+
+.website-div, .username-div, .btn-div {
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.website-div h3, .username-div h3 {
+  padding-left: 1rem;
+  text-align: left;
+}
+
+.website-input, .username-input {
+  width: 90%;
+  height: 30px;
+}
+
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>Password Generator</h1>
+
+  <div id="main">
+    <form class="password-form">
+      <div class="center-form">
+        <div class="website-user">
+          <div class="website-div">
+            <label>Add Website</label>
+            <input id="add-site" type="text" placeholder="Website">
+          </div>
+          <div class="username-div">
+            <label>Add Username</label>
+            <input id="add-username" type="text" placeholder="Username">
+          </div>
+        </div>
+        <div class="xyz">
+          <div class="copy">
+            <i id="icon" class="fas fa-clipboard"></i>
+          </div>
+          <div class="password-area">
+            <textarea maxlength="16" id="output" spellcheck="false" readonly></textarea>
+          </div>
+        </div>
+        <input value="Create" class="btn create">
+        <button type="submit" value="Save" class="btn">Save</button>
+      </div>
+    </form>
+    <i  id="chevron" class="fas fa-chevron-right"></i>
+  </div>
+
+  <table class="list-frame">
+    <thead>
+      <tr>
+        <th class="web">Website</th>
+        <th class="user">Username</th>
+        <th class="pass">Password</th>
+        <th class="empty"></th>
+      </tr>
+    </thead>
+    <tbody id="list-items"></tbody>
+  </table>
+
+  <script src="password.js"></script>
+</body>
+</html>
